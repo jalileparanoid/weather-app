@@ -1,13 +1,170 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #d35e35;
+  --second-color: #3d4251;
+  --third-color: #666f88;
+  --fourth-color: #cacbd5;
+  --fifth-color: #ffffff;
+
+  --main-duration: 0.3s;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  min-height: 100vh;
+  background-color: var(--fourth-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  color: var(--second-color);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.title span {
+  font-weight: bold;
+}
+/* Start Form */
+.container {
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-color);
+  border-radius: 1rem;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 50vw;
+  min-height: 50vh;
+}
+.container form input {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  border: 2px solid var(--third-color);
+  outline: none;
+  transition: var(--main-duration);
+  width: 60%;
+  height: 2.5rem;
+  font-size: 1.2rem;
+}
+.container form input:focus {
+  border: 2px solid var(--main-color);
+}
+.container form button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--main-color);
+  color: var(--fifth-color);
+  cursor: pointer;
+  transition: var(--main-duration);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.container form button:hover {
+  color: var(--main-color);
+  background-color: var(--fifth-color);
+}
+.container form .error {
+  position: absolute;
+  bottom: 0.8rem;
+  font-size: 1rem;
+  color: var(--fourth-color);
+}
+/* End Form */
+
+/* Start Loader */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50vw;
+  min-height: 50vh;
+}
+.loader svg path,
+.loader svg rect {
+  fill: var(--main-color);
+}
+/* End Loader */
+
+/* Start Forcast */
+.forcast-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  min-width: 50vw;
+  min-height: 50vh;
+  background-color: var(--second-color);
+  border-radius: 1rem;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.forcast-container .top {
+  width: calc(100% - 2rem);
 }
+
+.forcast-container .top .current-day {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.forcast-container .current-day .info h2 {
+  color: var(--fifth-color);
+  font-weight: bold;
+  font-size: 2rem;
+}
+.forcast-container .current-day .info p:first-of-type {
+  color: var(--fourth-color);
+  margin-top: -1rem;
+  font-size: 1.2rem;
+}
+.forcast-container .current-day .info img {
+  margin-top: 1rem;
+  max-width: 40%;
+}
+.forcast-container .current-day .info p:last-of-type {
+  font-size: 1.5rem;
+  color: var(--fourth-color);
+}
+.forcast-container .current-day h1 {
+  color: var(--fifth-color);
+  font-size: 4rem;
+}
+
+.forcast-container .bottom {
+}
+.forcast-container .bottom .description {
+  margin-top: 0.5rem;
+  display: flex;
+}
+.forcast-container .bottom .description .forecast-decription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.forcast-container .bottom .description .forecast-decription p:first-of-type {
+  text-transform: uppercase;
+  color: var(--fifth-color);
+}
+.forcast-container .bottom .description .forecast-decription p:last-of-type {
+  color: var(--fourth-color);
+}
+/* End Forcast */
