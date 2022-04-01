@@ -1,17 +1,17 @@
 import React, { Fragment } from 'react'
-import CurrentDayDetails from './CurrentDayDetails'
 import CurretDay from './CurretDay'
+import UpcomingDays from './UpcomingDays'
 
 function Forcast({ forecast }) {
 
     return (
         <Fragment>
             <div className="forcast-container">
-                <div className="top">
+                <div className="current">
                     <CurretDay {...forecast.currentDayForecast} />
                 </div>
-                <div className="bottom">
-                    <CurrentDayDetails forcast={forecast.currentDayDetailedForecast} />
+                <div className="upcoming">
+                    <UpcomingDays days={forecast.upcomingDaysForecast} />
                 </div>
             </div>
         </Fragment>

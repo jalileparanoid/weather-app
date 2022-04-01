@@ -1,14 +1,14 @@
 import { useState } from "react";
-import moment from 'moment';
+import moment from "moment";
 import axios from "axios";
 
 const useForecast = () => {
-
     const [isLoading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     const [forecast, setForecast] = useState(null);
 
-    const BASE_URL = "https://www.metaweather.com/api/location";
+    const BASE_URL =
+        "https://shrouded-plateau-37107.herokuapp.com/https://www.metaweather.com/api/location";
 
     const getWoeid = async (location) => {
         let { data } = await axios(`${BASE_URL}/search/?query=${location}`);
@@ -34,64 +34,45 @@ const useForecast = () => {
         return data;
     };
 
-    const getCurrentDayForcast = (data, title) => ({
-        weekday: moment(data.applicable_date).format('dddd'),
-        date: moment(data.applicable_date).format('MMMM D'),
+    const getCurrentDayForcast = (data, title, fullData) => ({
+        weekday: moment(data.applicable_date).format("dddd"),
+        country: fullData.parent.title,
+        date: moment(data.applicable_date).format("MMMM D"),
         location: title,
         temperature: Math.round(data.the_temp),
+        minTemp: Math.round(data.min_temp),
+        maxTemp: Math.round(data.max_temp),
         weatherIcon: `https://www.metaweather.com/static/img/weather/${data.weather_state_abbr}.svg`,
-        weatherDescription: data.weather_state_name
-    })
+        weatherDescription: data.weather_state_name,
+        humidity: data.humidity,
+        visibility: Math.round(data.visibility),
+        wind: Math.round(data.wind_speed),
+    });
 
-    const getCurrentDayDetailedForecast = (data) => [
-        {
-            name: "predictability",
-            value: data.predictability,
-            unit: "%"
-        },
-        {
-            name: "humidity",
-            value: data.humidity,
-            unit: "%"
-        },
-        {
-            name: "wind speed",
-            value: Math.round(data.wind_speed),
-            unit: "km/h"
-        },
-        {
-            name: "air pressure",
-            value: data.air_pressure,
-            unit: "mb"
-        },
-        {
-            name: 'max temp',
-            value: Math.round(data.max_temp),
-            unit: '°C',
-        },
-        {
-            name: 'min temp',
-            value: Math.round(data.min_temp),
-            unit: '°C',
-        }
-    ]
-
-    const getUpcomingDaysForecast = (data) => {
-        data.slice(1).map(day => ({
-            weekday: moment(day.applicable_date).format('dddd').substring(0, 3),
-            weatherIcon: day.weather_state_abbr,
-            temperature: Math.round(day.max_temp),
-        }))
-    }
+    const getUpcomingDaysForecast = (data) =>
+        data.slice(1).map((day) => ({
+            imgUrl: day.weather_state_abbr,
+            maxTemp: Math.round(day.max_temp),
+            minTemp: Math.round(day.min_temp),
+            weekday: moment(day.applicable_date).format("dddd").substring(0, 3),
+        }));
 
     const gatherForcastData = (data) => {
-        const currentDayForecast = getCurrentDayForcast(data.consolidated_weather[0], data.title)
-        const currentDayDetailedForecast = getCurrentDayDetailedForecast(data.consolidated_weather[0])
-        const upcomingDaysForecast = getUpcomingDaysForecast(data.consolidated_weather)
+        const currentDayForecast = getCurrentDayForcast(
+            data.consolidated_weather[0],
+            data.title,
+            data
+        );
+        const upcomingDaysForecast = getUpcomingDaysForecast(
+            data.consolidated_weather
+        );
 
-        setLoading(false)
-        setForecast({ currentDayForecast, currentDayDetailedForecast, upcomingDaysForecast })
-    }
+        setLoading(false);
+        setForecast({
+            currentDayForecast,
+            upcomingDaysForecast,
+        });
+    };
 
     const submitRequest = async (location) => {
         setError(null);
@@ -103,7 +84,7 @@ const useForecast = () => {
         const data = await getForcastData(response.woeid);
         if (!data) return;
 
-        gatherForcastData(data)
+        gatherForcastData(data);
     };
 
     return {

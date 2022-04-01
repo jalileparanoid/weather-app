@@ -3,6 +3,9 @@ import Form from "./Form";
 import Loader from "./Loader";
 import Forcast from "./Forcast";
 import useForcast from "./useForecast"
+import AppFooter from "./AppFooter";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons'
 
 function Main() {
 
@@ -27,6 +30,12 @@ function Main() {
                 </div>
             )}
             {forecast && <Forcast forecast={forecast} />}
+            {forecast && <button className="back" onClick={() => {
+                window.location.reload()
+            }}>
+                <FontAwesomeIcon icon={faAngleLeft} />
+            </button>}
+            <AppFooter />
         </Fragment>
     );
 }
