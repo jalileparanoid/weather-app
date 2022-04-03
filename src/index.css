@@ -162,6 +162,11 @@ body {
   font-weight: bold;
   font-size: 2rem;
 }
+.forcast-container .current-day .left .city-name-length{
+  color: var(--fifth-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
 .forcast-container .current-day .left .country-name {
   color: var(--fourth-color);
   margin-top: -1rem;
