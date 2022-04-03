@@ -19,7 +19,7 @@ function CurretDay({
     return (
         <div className="current-day">
             <div className="left">
-                <h2 className={location.length > 7 ? "city-name-length" : "city-name"}>
+                <h2 className={location.length > 8 ? "city-name-length" : "city-name"}>
                     {location}
                 </h2>
                 <p className="country-name">{country}</p>
