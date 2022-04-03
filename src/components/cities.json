@@ -1,0 +1,851 @@
+[
+    {
+        "city": "London"
+    },
+    {
+        "city": "San Francisco"
+    },
+    {
+        "city": "New York"
+    },
+    {
+        "city": "Sydney"
+    },
+    {
+        "city": "Philadelphia"
+    },
+    {
+        "city": "Houston"
+    },
+    {
+        "city": "Los Angeles"
+    },
+    {
+        "city": "Berlin"
+    },
+    {
+        "city": "Chicago"
+    },
+    {
+        "city": "Tokyo"
+    },
+    {
+        "city": "Beijing"
+    },
+    {
+        "city": "Mexico City"
+    },
+    {
+        "city": "Osaka"
+    },
+    {
+        "city": "Bristol"
+    },
+    {
+        "city": "Mumbai"
+    },
+    {
+        "city": "Glasgow"
+    },
+    {
+        "city": "Amsterdam"
+    },
+    {
+        "city": "Johannesburg"
+    },
+    {
+        "city": "Rio de Janeiro"
+    },
+    {
+        "city": "Shanghai"
+    },
+    {
+        "city": "New Delhi"
+    },
+    {
+        "city": "Jakarta"
+    },
+    {
+        "city": "Seoul"
+    },
+    {
+        "city": "São Paulo"
+    },
+    {
+        "city": "Moscow"
+    },
+    {
+        "city": "Hong Kong"
+    },
+    {
+        "city": "San Diego"
+    },
+    {
+        "city": "San Jose"
+    },
+    {
+        "city": "Dallas"
+    },
+    {
+        "city": "Indianapolis"
+    },
+    {
+        "city": "San Antonio"
+    },
+    {
+        "city": "Montréal"
+    },
+    {
+        "city": "Jacksonville"
+    },
+    {
+        "city": "Austin"
+    },
+    {
+        "city": "Kiev"
+    },
+    {
+        "city": "Phoenix"
+    },
+    {
+        "city": "Madrid"
+    },
+    {
+        "city": "Toronto"
+    },
+    {
+        "city": "Fort Worth"
+    },
+    {
+        "city": "Guangzhou"
+    },
+    {
+        "city": "Columbus"
+    },
+    {
+        "city": "Memphis"
+    },
+    {
+        "city": "Washington DC"
+    },
+    {
+        "city": "Paris"
+    },
+    {
+        "city": "Munich"
+    },
+    {
+        "city": "Brisbane"
+    },
+    {
+        "city": "Rome"
+    },
+    {
+        "city": "Milwaukee"
+    },
+    {
+        "city": "Bradford"
+    },
+    {
+        "city": "Liverpool"
+    },
+    {
+        "city": "Wakefield"
+    },
+    {
+        "city": "Istanbul"
+    },
+    {
+        "city": "El Paso"
+    },
+    {
+        "city": "Seattle"
+    },
+    {
+        "city": "Baltimore"
+    },
+    {
+        "city": "Las Vegas"
+    },
+    {
+        "city": "Melbourne"
+    },
+    {
+        "city": "Buenos Aires"
+    },
+    {
+        "city": "Boston"
+    },
+    {
+        "city": "Nashville"
+    },
+    {
+        "city": "Edinburgh"
+    },
+    {
+        "city": "Perth"
+    },
+    {
+        "city": "Karachi"
+    },
+    {
+        "city": "Hamburg"
+    },
+    {
+        "city": "Dubai"
+    },
+    {
+        "city": "Leeds"
+    },
+    {
+        "city": "Sheffield"
+    },
+    {
+        "city": "Adelaide"
+    },
+    {
+        "city": "Charlotte"
+    },
+    {
+        "city": "Detroit"
+    },
+    {
+        "city": "Louisville"
+    },
+    {
+        "city": "Barcelona"
+    },
+    {
+        "city": "Denver"
+    },
+    {
+        "city": "Oklahoma City"
+    },
+    {
+        "city": "Cardiff"
+    },
+    {
+        "city": "Kolkata"
+    },
+    {
+        "city": "Cairo"
+    },
+    {
+        "city": "Virginia Beach"
+    },
+    {
+        "city": "Kinshasa"
+    },
+    {
+        "city": "Honolulu"
+    },
+    {
+        "city": "Tehrān"
+    },
+    {
+        "city": "Colorado Springs"
+    },
+    {
+        "city": "Auckland"
+    },
+    {
+        "city": "Dongguan"
+    },
+    {
+        "city": "Sacramento"
+    },
+    {
+        "city": "Kansas City"
+    },
+    {
+        "city": "Fresno"
+    },
+    {
+        "city": "Bangkok"
+    },
+    {
+        "city": "Ho Chi Minh City"
+    },
+    {
+        "city": "Mesa"
+    },
+    {
+        "city": "Atlanta"
+    },
+    {
+        "city": "Bangalore"
+    },
+    {
+        "city": "Lima"
+    },
+    {
+        "city": "Albuquerque"
+    },
+    {
+        "city": "Tucson"
+    },
+    {
+        "city": "Lagos"
+    },
+    {
+        "city": "Long Beach"
+    },
+    {
+        "city": "Shenzhen"
+    },
+    {
+        "city": "Bogotá"
+    },
+    {
+        "city": "Omaha"
+    },
+    {
+        "city": "Raleigh"
+    },
+    {
+        "city": "Miami"
+    },
+    {
+        "city": "Exeter"
+    },
+    {
+        "city": "Hà Nội"
+    },
+    {
+        "city": "Casablanca"
+    },
+    {
+        "city": "Singapore"
+    },
+    {
+        "city": "Yokohama"
+    },
+    {
+        "city": "Nairobi"
+    },
+    {
+        "city": "Tianjin"
+    },
+    {
+        "city": "Dhaka"
+    },
+    {
+        "city": "Pyongyang"
+    },
+    {
+        "city": "Addis Ababa"
+    },
+    {
+        "city": "Hyderabad"
+    },
+    {
+        "city": "Santa Cruz"
+    },
+    {
+        "city": "Dublin"
+    },
+    {
+        "city": "Budapest"
+    },
+    {
+        "city": "Milan"
+    },
+    {
+        "city": "Cambridge"
+    },
+    {
+        "city": "Oxford"
+    },
+    {
+        "city": "Vienna"
+    },
+    {
+        "city": "Brussels"
+    },
+    {
+        "city": "Cologne"
+    },
+    {
+        "city": "Riyadh"
+    },
+    {
+        "city": "Damascus"
+    },
+    {
+        "city": "Ankara"
+    },
+    {
+        "city": "Little Rock"
+    },
+    {
+        "city": "Wilmington"
+    },
+    {
+        "city": "Santiago"
+    },
+    {
+        "city": "Birmingham"
+    },
+    {
+        "city": "Baghdad"
+    },
+    {
+        "city": "Boise"
+    },
+    {
+        "city": "Anchorage"
+    },
+    {
+        "city": "Athens"
+    },
+    {
+        "city": "Santorini"
+    },
+    {
+        "city": "Reykjavík"
+    },
+    {
+        "city": "Sofia"
+    },
+    {
+        "city": "Prague"
+    },
+    {
+        "city": "Zagreb"
+    },
+    {
+        "city": "Oslo"
+    },
+    {
+        "city": "Copenhagen"
+    },
+    {
+        "city": "Bucharest"
+    },
+    {
+        "city": "Torino"
+    },
+    {
+        "city": "Stockholm"
+    },
+    {
+        "city": "Naples"
+    },
+    {
+        "city": "Warsaw"
+    },
+    {
+        "city": "Bridgeport"
+    },
+    {
+        "city": "Wichita"
+    },
+    {
+        "city": "Richmond"
+    },
+    {
+        "city": "New Orleans"
+    },
+    {
+        "city": "Calgary"
+    },
+    {
+        "city": "Edmonton"
+    },
+    {
+        "city": "St Petersburg"
+    },
+    {
+        "city": "Manila"
+    },
+    {
+        "city": "Vancouver"
+    },
+    {
+        "city": "Maracaibo"
+    },
+    {
+        "city": "Caracas"
+    },
+    {
+        "city": "Cheyenne"
+    },
+    {
+        "city": "Charleston"
+    },
+    {
+        "city": "Santander"
+    },
+    {
+        "city": "İzmir"
+    },
+    {
+        "city": "Toulouse"
+    },
+    {
+        "city": "Bordeaux"
+    },
+    {
+        "city": "Wuhan"
+    },
+    {
+        "city": "Marseille"
+    },
+    {
+        "city": "Lille"
+    },
+    {
+        "city": "Ahmedabad"
+    },
+    {
+        "city": "Lyon"
+    },
+    {
+        "city": "Nice"
+    },
+    {
+        "city": "Lahore"
+    },
+    {
+        "city": "Belfast"
+    },
+    {
+        "city": "Bremen"
+    },
+    {
+        "city": "Stoke-on-Trent"
+    },
+    {
+        "city": "Fargo"
+    },
+    {
+        "city": "Sendai"
+    },
+    {
+        "city": "Truro"
+    },
+    {
+        "city": "Preston"
+    },
+    {
+        "city": "Sunderland"
+    },
+    {
+        "city": "Lisbon"
+    },
+    {
+        "city": "Phuket"
+    },
+    {
+        "city": "Palm Springs"
+    },
+    {
+        "city": "Leicester"
+    },
+    {
+        "city": "Stuttgart"
+    },
+    {
+        "city": "Coventry"
+    },
+    {
+        "city": "Gothenburg"
+    },
+    {
+        "city": "Hanover"
+    },
+    {
+        "city": "St. Louis"
+    },
+    {
+        "city": "Salvador"
+    },
+    {
+        "city": "Plymouth"
+    },
+    {
+        "city": "Lake Tahoe"
+    },
+    {
+        "city": "Nuremberg"
+    },
+    {
+        "city": "Mountain View"
+    },
+    {
+        "city": "Kawasaki"
+    },
+    {
+        "city": "Kyoto"
+    },
+    {
+        "city": "Kobe"
+    },
+    {
+        "city": "Hangzhou"
+    },
+    {
+        "city": "Blackpool"
+    },
+    {
+        "city": "Yangon"
+    },
+    {
+        "city": "Bakersfield"
+    },
+    {
+        "city": "Salt Lake City"
+    },
+    {
+        "city": "Geneva"
+    },
+    {
+        "city": "Portland"
+    },
+    {
+        "city": "Reading"
+    },
+    {
+        "city": "Durban"
+    },
+    {
+        "city": "Saitama"
+    },
+    {
+        "city": "Brighton"
+    },
+    {
+        "city": "Dresden"
+    },
+    {
+        "city": "Ajaccio"
+    },
+    {
+        "city": "Pune"
+    },
+    {
+        "city": "Mombasa"
+    },
+    {
+        "city": "Providence"
+    },
+    {
+        "city": "Chennai"
+    },
+    {
+        "city": "Kharkiv"
+    },
+    {
+        "city": "Helsinki"
+    },
+    {
+        "city": "Taipei"
+    },
+    {
+        "city": "Essen"
+    },
+    {
+        "city": "St Ives"
+    },
+    {
+        "city": "Aberdeen"
+    },
+    {
+        "city": "Oakland"
+    },
+    {
+        "city": "Sapporo"
+    },
+    {
+        "city": "Ipswich"
+    },
+    {
+        "city": "Norwich"
+    },
+    {
+        "city": "Christchurch"
+    },
+    {
+        "city": "Surat"
+    },
+    {
+        "city": "Busan"
+    },
+    {
+        "city": "Manchester"
+    },
+    {
+        "city": "Hiroshima"
+    },
+    {
+        "city": "Northampton"
+    },
+    {
+        "city": "Leipzig"
+    },
+    {
+        "city": "Southend-on-Sea"
+    },
+    {
+        "city": "The Hague"
+    },
+    {
+        "city": "Minsk"
+    },
+    {
+        "city": "Salford"
+    },
+    {
+        "city": "Kirkwall"
+    },
+    {
+        "city": "Swansea"
+    },
+    {
+        "city": "Penzance"
+    },
+    {
+        "city": "Ibadan"
+    },
+    {
+        "city": "Billings"
+    },
+    {
+        "city": "Alexandria"
+    },
+    {
+        "city": "Newcastle"
+    },
+    {
+        "city": "Jackson"
+    },
+    {
+        "city": "Sioux Falls"
+    },
+    {
+        "city": "Nagoya"
+    },
+    {
+        "city": "Swindon"
+    },
+    {
+        "city": "Brasília"
+    },
+    {
+        "city": "Dundee"
+    },
+    {
+        "city": "Kano"
+    },
+    {
+        "city": "Kitakyushu"
+    },
+    {
+        "city": "Denpasar"
+    },
+    {
+        "city": "Boulder"
+    },
+    {
+        "city": "Minneapolis"
+    },
+    {
+        "city": "Frankfurt"
+    },
+    {
+        "city": "Falmouth"
+    },
+    {
+        "city": "Middlesbrough"
+    },
+    {
+        "city": "Rhyl"
+    },
+    {
+        "city": "Bournemouth"
+    },
+    {
+        "city": "Fukuoka"
+    },
+    {
+        "city": "Newark"
+    },
+    {
+        "city": "Manukau"
+    },
+    {
+        "city": "Luton"
+    },
+    {
+        "city": "Wellington"
+    },
+    {
+        "city": "Abidjan"
+    },
+    {
+        "city": "Kingston upon Hull"
+    },
+    {
+        "city": "Des Moines"
+    },
+    {
+        "city": "Windhoek"
+    },
+    {
+        "city": "Calvi"
+    },
+    {
+        "city": "Venice"
+    },
+    {
+        "city": "Santa Cruz de Tenerife"
+    },
+    {
+        "city": "Chengdu"
+    },
+    {
+        "city": "York"
+    },
+    {
+        "city": "Kuala Lumpur"
+    },
+    {
+        "city": "Portsmouth"
+    },
+    {
+        "city": "Sidmouth"
+    },
+    {
+        "city": "Burlington"
+    },
+    {
+        "city": "Santa Fe"
+    },
+    {
+        "city": "Zurich"
+    },
+    {
+        "city": "Nottingham"
+    },
+    {
+        "city": "Derby"
+    },
+    {
+        "city": "Huddersfield"
+    },
+    {
+        "city": "Dortmund"
+    },
+    {
+        "city": "Wolverhampton"
+    },
+    {
+        "city": "Cape Town"
+    },
+    {
+        "city": "Düsseldorf"
+    },
+    {
+        "city": "Columbia"
+    }
+]

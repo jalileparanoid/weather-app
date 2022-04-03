@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 :root {
   --main-color: #d35e35;
   --second-color: #3d4251;
@@ -12,8 +13,8 @@
 
   --main-duration: 0.3s;
 }
+
 body {
-  position: relative;
   font-family: "Cairo", sans-serif;
   min-height: 100vh;
   background-color: var(--fourth-color);
@@ -21,15 +22,18 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .title {
   color: var(--second-color);
   text-align: center;
   margin-bottom: 1rem;
   font-size: 1.5rem;
 }
+
 .title span {
   font-weight: bold;
 }
+
 .back {
   position: absolute;
   left: 15%;
@@ -42,6 +46,7 @@ body {
   color: var(--main-color);
   cursor: pointer;
 }
+
 @media (max-width: 576px) {
   .back {
     left: 10px;
@@ -51,7 +56,6 @@ body {
 
 /* Start Form */
 .container {
-  position: relative;
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -61,7 +65,9 @@ body {
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
+
 .container form {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,6 +75,7 @@ body {
   min-width: 50vw;
   min-height: 50vh;
 }
+
 .container form input {
   padding: 0.5rem 1rem;
   margin: 1rem 0;
@@ -76,13 +83,17 @@ body {
   border: 2px solid var(--third-color);
   outline: none;
   transition: var(--main-duration);
-  width: 60%;
   height: 2.5rem;
   font-size: 1.2rem;
+  width: 60%;
+  color: var(--second-color);
+  caret-color: var(--main-color);
 }
+
 .container form input:focus {
   border: 2px solid var(--main-color);
 }
+
 .container form button {
   padding: 0.5rem 1rem;
   border: none;
@@ -94,16 +105,55 @@ body {
   font-weight: bold;
   font-size: 1.2rem;
 }
+
 .container form button:hover {
   color: var(--main-color);
   background-color: var(--fifth-color);
 }
+
+.container form .search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container form .search-filter {
+  position: absolute;
+  top: calc(50% + 0.5rem);
+  width: 50%;
+  background-color: #ffffffd4;
+  overflow-x: hidden;
+  max-height: calc(50vh/2);
+}
+
+@media (max-width: 767px) {
+  .container form .search-filter {
+    border-radius: 0.8rem;
+    width: 60%;
+  }
+}
+
+.container form .search-item {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  list-style: none;
+  transition: var(--main-duration);
+  color: var(--second-color);
+}
+
+.container form .search-item:hover {
+  background-color: var(--fourth-color);
+  padding-left: 2rem;
+}
+
 .container form .error {
   position: absolute;
   bottom: 0.8rem;
   font-size: 1rem;
   color: var(--fourth-color);
 }
+
 /* End Form */
 
 /* Start Loader */
@@ -114,10 +164,12 @@ body {
   min-width: 50vw;
   min-height: 50vh;
 }
+
 .loader svg path,
 .loader svg rect {
   fill: var(--main-color);
 }
+
 /* End Loader */
 
 /* Start Forcast */
@@ -134,60 +186,73 @@ body {
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
+
 @media (max-width: 991px) {
   .forcast-container {
     width: 60vw;
   }
 }
+
 @media (max-width: 576px) {
   .forcast-container {
     width: 80vw;
   }
 }
+
 .forcast-container .current {
   width: calc(100% - 1rem);
 }
+
 .forcast-container .current .current-day {
   display: grid;
   grid-template-columns: repeat(2, minmax(auto, 1fr));
 }
+
 .forcast-container .current-day .left {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
+
 .forcast-container .current-day .left .city-name {
   color: var(--fifth-color);
   font-weight: bold;
   font-size: 2rem;
 }
-.forcast-container .current-day .left .city-name-length{
+
+.forcast-container .current-day .left .city-name-length {
   color: var(--fifth-color);
   font-weight: bold;
   font-size: 1.5rem;
 }
+
 .forcast-container .current-day .left .country-name {
   color: var(--fourth-color);
   margin-top: -1rem;
   font-size: 1.2rem;
 }
+
 .forcast-container .current-day .left .day {
   color: var(--fifth-color);
   font-size: 1rem;
 }
+
 .forcast-container .current-day .left .date {
   color: var(--fifth-color);
   font-size: 1rem;
 }
+
 .forcast-container .current-day .left img {
   margin-top: 1rem;
   max-width: 40%;
 }
+
 .forcast-container .current-day .left .describe {
   font-size: 1.5rem;
   color: var(--fourth-color);
 }
+
 @media (max-width: 767px) {
   .forcast-container .current-day .left .describe {
     font-size: 1.1rem;
@@ -200,15 +265,18 @@ body {
   align-items: flex-end;
   flex-direction: column;
 }
+
 .forcast-container .current-day .temp {
   color: var(--fifth-color);
   font-size: 3rem;
 }
+
 .forcast-container .current-day .min-max-temp {
   color: var(--fourth-color);
   font-size: 1.5rem;
   margin-top: -1rem;
 }
+
 @media (max-width: 767px) {
   .forcast-container .current-day .min-max-temp {
     font-size: 1rem;
@@ -223,23 +291,27 @@ body {
   padding-right: 1rem;
   width: 60%;
 }
+
 @media (min-width: 992px) {
   .forcast-container .current-day .details {
     width: 40%;
   }
 }
+
 .forcast-container .current-day .humidity {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0.5rem 0;
 }
+
 .forcast-container .current-day .visibility {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0.5rem 0;
 }
+
 .forcast-container .current-day .wind {
   display: flex;
   justify-content: space-between;
@@ -251,31 +323,39 @@ body {
   width: 100%;
   margin-top: 0.8rem;
 }
+
 .forcast-container .upcoming .box {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
+
 .forcast-container .upcoming .box .next-day {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .forcast-container .upcoming .box .day-name {
   color: var(--fifth-color);
 }
+
 .forcast-container .upcoming .box img {
   max-width: 30%;
 }
+
 .forcast-container .upcoming .box .next-temp {
   color: var(--fourth-color);
 }
+
 .forcast-container .upcoming .box .next-temp p:first-of-type {
   margin-top: 0.5rem;
 }
+
 .forcast-container .upcoming .box .next-temp p:last-of-type {
   margin-top: -0.5rem;
 }
+
 /* End Forcast */
 
 /* Start Footer */
@@ -286,23 +366,29 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
 .footer .copyright {
   color: var(--second-color);
   font-size: 1rem;
   font-weight: 600;
 }
+
 .footer .social-links a {
   color: var(--second-color);
   text-decoration: none;
 }
+
 .footer .social-links a:hover {
   color: var(--main-color);
 }
+
 .footer .social-links .icon {
   margin: 0 0.4rem 0;
   cursor: pointer;
 }
+
 .footer .social-links .icon:hover {
   transform: scale(1.5);
 }
+
 /* End Footer  */
